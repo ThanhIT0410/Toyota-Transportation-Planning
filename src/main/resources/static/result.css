@@ -1,0 +1,75 @@
+body {
+    display: flex;
+    height: 100vh;
+    margin: 0;
+    overflow: auto;
+}
+
+.sidebar {
+    background-color: #555555;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 220px;
+}
+
+button {
+    width: 100%;
+    background: inherit;
+    color: white;
+    border: none;
+    border-bottom: 1px solid white;
+    font-size: 20px;
+    font-weight: bold;
+    height: 60px;
+    cursor: pointer;
+    padding: 10px;
+}
+
+button:hover {
+    background-color: white;
+    color: black;
+}
+
+.container {
+    width: calc(100% - 240px);
+}
+
+.table-container {
+    height: 85%;
+    padding: 0 20px 20px;
+    margin-top: 20px;
+    overflow: auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th {
+    background-color: #ddd;
+    font-size: 18px;
+    font-weight: bold;
+    position: sticky;
+    z-index: 1;
+    top: 0;
+    text-align: center;
+    padding: 10px;
+    border: 1px solid #555555;
+}
+
+td {
+    border-left: 1px solid #555555;
+    border-right: 1px solid #555555;
+    border-top: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+    padding: 10px;
+}
+
+.info {
+    border-top: 1px solid #555555;
+    padding-top: 20px;
+    padding-left: 20px;
+}
+

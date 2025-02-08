@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="result.css">
+</head>
+<body>
+    <div class="sidebar">
+        <button id="showResult">Đơn hàng</button>
+        <button id="showDelivery">Chuyến vận chuyển</button>
+    </div>
+
+    <div class="container">
+        <div class="table-container">
+            <table id="resultTable">
+                <thead>
+                    <tr>
+                        <th>STT</th>
+                        <th>Grade</th>
+                        <th>ID</th>
+                        <th>Date</th>
+                        <th>Source</th>
+                        <th>Destination</th>
+                        <th>Assigned Vehicle ID</th>
+                        <th>Assigned Vehicle</th>
+                        <th>Assigned Unit</th>
+                    </tr>
+                </thead>
+                <tbody id="resultTable-body"></tbody>
+            </table>
+
+            <table id="deliveryTable" style="display: none;">
+                <thead>
+                    <tr>
+                        <th>Vehicle ID</th>
+                        <th>Source</th>
+                        <th>Destination</th>
+                        <th>Vehicle</th>
+                        <th>Unit</th>
+                        <th>Assigned Orders</th>
+                    </tr>
+                </thead>
+                <tbody id="deliveryTable-body"></tbody>
+            </table>
+        </div>
+
+        <div class="info">
+            <h3>Tổng Giá Vận Chuyển: <span id="totalPrice"></span> VNĐ</h3>
+            <h3>Số Lượng Xe Xếp Lịch Thành Công: <span id="carCount"></span></h3>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.18.5/xlsx.full.min.js"></script>
+    <script src="output-script.js"></script>
+</body>
+</html>

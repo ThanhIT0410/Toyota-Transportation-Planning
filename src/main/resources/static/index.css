@@ -1,0 +1,48 @@
+body {
+    overflow: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+}
+
+p {
+    margin: 0;
+}
+
+.appLabel {
+    width: 1000px;
+    font-size: 60px;
+    color: #777777;
+    margin-top: 50px;
+    text-align: center;
+}
+
+.form-container {
+    margin: 0 200px;
+    border: 2px solid black;
+    padding: 20px 50px;
+    font-size: 20px;
+    line-height: 1.8;
+}
+
+label {
+    display: inline-block;
+    width: 150px;
+}
+
+input {
+    width: 300px;
+}
+
+button {
+    font-size: 18px;
+    margin: 20px auto;
+}
+
+#loading {
+    display: none;
+    font-size: 20px;
+    color: dodgerblue;
+}

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Toyota</title>
+    <link rel="stylesheet" href="/index.css">
+</head>
+<body>
+    <div class="appLabel">
+        <p> Chào mừng đến với ứng dụng tối ưu lịch vận chuyển Toyota </p>
+        <img src="/images.png" alt="Toyota logo">
+    </div>
+
+    <div class="form-container">
+        <h2> Nhập dữ liệu </h2>
+        <form id="input">
+            <label for="startDate"> Ngày bắt đầu: </label>
+            <input type="date" id="startDate" name="startDate"> <br>
+
+            <label for="endDate"> Ngày kết thúc: </label>
+            <input type="date" id="endDate" name="endDate"> <br>
+
+            <label for="excelFile"> Tải lên file Excel: </label>
+            <input type="file" id="excelFile" name="excelFile" accept=".xls,.xlsx"> <br>
+
+            <button type="submit"> Tối ưu </button>
+        </form>
+    </div>
+
+    <p id="loading">⏳ Đang xử lý...</p>
+
+    <script src="input-script.js"></script>
+</body>
+</html>
